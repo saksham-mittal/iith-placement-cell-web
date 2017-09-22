@@ -1,0 +1,524 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: url(back.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-font-smoothing: antialiased;
+    transition: all .7s ease;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: font;
+    src: url(myFont.otf);
+}
+
+#logoImg {
+    width: 140px;
+    height: 140px;
+    z-index: 10;
+}
+
+#contentHeading {
+    max-width: 100%;
+    margin-top: 105px;
+}
+
+#mainHeading {
+    font-family: 'Raleway', sans-serif;
+    line-height: 55px;
+    letter-spacing: 4px;
+    color: #fff;
+    font-weight: 200;
+    font-size: 40px;
+}
+
+#txtHeading {
+    font-size: 15px;
+    color: #f5f5f5;
+}
+
+.quote-div {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 7px;
+}
+
+.quote {
+    color: #fff;
+    font-size: 54px !important;
+}
+
+.content-quote {
+    color: #fff;
+    margin-left: 0 !important;
+}
+
+.container-person {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 240px;
+    height: 240px;
+    border-radius: 300px;
+}
+
+#ub_desai {
+    width: 100%;
+    height: 100%;
+}
+
+.name-person {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.name-bio {
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.icon-div {
+    position: relative;
+    margin-top: 500px;
+    margin-bottom: 700px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.iconCont {
+    position: relative;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    border-radius: 150px;
+    height: 150px;
+    width: 150px;
+    margin-top: 80px;
+}
+
+.iconList {
+    color: grey;
+    font-size: 60px;
+    position: relative;
+    top: 24px;
+    transition: all .3s ease;
+}
+
+.iconText {
+    position: relative;
+    font-size: 23px; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #d3d3d3; 
+    letter-spacing: 2.3px;
+}
+
+.iconPara {
+    position: relative;
+    color: grey;
+    margin-bottom: 80px;
+}
+
+.bright {
+    color: #fff;
+}
+
+.normal1 {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all .8s ease;
+}
+
+.up1 {
+    transform: translate(0, 50px);
+    opacity: 0;
+}
+
+.normal {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all .8s ease;
+}
+
+.up {
+    transform: translate(0, 50px);
+    opacity: 0;
+}
+
+.normal2 {
+    transform: translate(0, 0);
+    transition: all .8s ease;
+    opacity: 1;
+}
+
+.move1 {
+    transform: translate(0, 100px);
+    opacity: 0;
+}
+
+.move2 {
+    transform: translate(0, 100px);
+    opacity: 0;
+}
+
+.move3 {
+    transform: translate(0, 100px);
+    opacity: 0;
+}
+
+.move4 {
+    transform: translate(0, 100px);
+    opacity: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    line-height: 60px;
+    color: #fff;
+    font-size: 10px;
+}
+
+#mapImg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+}
+
+#overlay-dark {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: width 300ms cubic-bezier(0.2, 0.7, 0.5, 1);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #f5f5f5;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -10px;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+#stage {
+    width: 100% !important;
+    transition: all 300ms cubic-bezier(0.2, 0.7, 0.5, 1);
+    margin-left: 0px;
+}
+
+.menu {
+    position: fixed;
+    z-index: 1000;
+    width: 40px !important;
+    height: 60px !important;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.contact-title {
+    text-transform: uppercase;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1.4px;
+}
+
+.contact-name {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.contact-icons {
+    font-size: 23px;
+    color: #3185FF;
+}
+
+.info-window .info-window-heading {
+    color: #333333;
+}
+
+.info-window .info-content {
+    color: #727272;
+}
+
+.chat-bubble {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 30px;
+    background-color: #000;
+    z-index: 12;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    cursor: pointer;
+}
+
+.scrollTop {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 110px;
+    right: 40px;
+    border-radius: 30px;
+    background-color: #000;
+    z-index: 12;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transform: scale(0, 0);
+    transition: all .4s ease;
+}
+
+#contact-chat-bubble {
+    position: relative;
+    top: 5px;
+    font-size: 35px;
+    color: #fff;
+}
+
+#scroll-top-bubble {
+    font-size: 35px;
+    color: #fff;
+}
+
+.tag-divs {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    color: #fff !important;
+    transition: all .3s ease;
+}
+
+.tag-divs:hover {
+    background-color: #fff;
+    color: #000 !important;
+}
+
+@media (min-width: 768px) { 
+    #logoImg {
+        width: 140px;
+        height: 140px;
+        z-index: 10;
+    }
+
+    #contentHeading {
+        max-width: 60%;
+        margin-top: 165px;
+    }
+
+    #mainHeading {
+        font-family: 'Raleway', sans-serif;
+        line-height: 75px;
+        letter-spacing: 4px;
+        color: #fff;
+        font-weight: 200;
+        font-size: 60px;
+    }
+
+    #txtHeading {
+        color: #f5f5f5;
+    }
+
+    .quote-div {
+        position: relative;
+        max-width: 60%;
+        margin: 0 auto;
+        margin-top: 500px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 7px;
+    }
+
+    .quote {
+        color: #fff;
+        font-size: 54px !important;
+    }
+
+    .content-quote {
+        color: #fff;
+    }
+
+    .container-person {
+        overflow: hidden;
+        width: 240px;
+        height: 240px;
+        border-radius: 300px;
+    }
+
+    #ub_desai {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .name-person {
+        color: #fff;
+        font-size: 30px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    
+    .name-bio {
+        color: grey;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+    .icon-div {
+        position: relative;
+        margin-top: 500px;
+        margin-bottom: 700px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    
+    .iconCont {
+        position: relative;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        border-radius: 150px;
+        height: 150px;
+        width: 150px;
+        margin-top: 80px;
+    }
+    
+    .iconList {
+        color: grey;
+        font-size: 60px;
+        position: relative;
+        top: 24px;
+        transition: all .3s ease;
+    }
+    
+    .iconText {
+        position: relative;
+        font-size: 23px; 
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        color: #d3d3d3; 
+        letter-spacing: 2.3px;
+    }
+    
+    .iconPara {
+        position: relative;
+        color: grey;
+        margin-bottom: 80px;
+    }
+    
+    .bright {
+        color: #fff;
+    }
+    
+    .normal1 {
+        opacity: 1;
+        transform: translate(0, 0);
+        transition: all .8s ease;
+    }
+
+    .up1 {
+        transform: translate(0, 50px);
+        opacity: 0;
+    }
+    
+    .normal {
+        opacity: 1;
+        transform: translate(0, 0);
+        transition: all .8s ease;
+    }
+
+    .up {
+        transform: translate(0, 50px);
+        opacity: 0;
+    }
+    
+    .normal2 {
+        transform: translate(0, 0);
+        transition: all .8s ease;
+        opacity: 1;
+    }
+    
+    .move1 {
+        transform: translate(170px, 0);
+        opacity: 0;
+    }
+    
+    .move2 {
+        transform: translate(60px, 0);
+        opacity: 0;
+    }
+    
+    .move3 {
+        transform: translate(-60px, 0);
+        opacity: 0;
+    }
+    
+    .move4 {
+        transform: translate(-170px, 0);
+        opacity: 0;
+    }
+    
+    .footer {
+        font-size: 12px;
+    }
+}
