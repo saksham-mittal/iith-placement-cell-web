@@ -29,30 +29,6 @@ $(document).ready(function() {
         $('i', this).removeClass('bright');
     });
     
-    function openNav() {
-        $("#mySidenav").css('width', '250px');
-        $('#stage').css('margin-left', '250px');
-        $(".menu").css('opacity', '0');
-        $("#mapImg").css('height', '100%');
-        $("#mapImg").css('width', 'auto');
-    }
-
-    function closeNav() {
-        $("#mySidenav").css('width', '0px');
-        $('#stage').css('margin-left', '0px');
-        $(".menu").css('opacity', '1');
-        $("#mapImg").css('height', 'auto');
-        $("#mapImg").css('width', '100%');
-    }
-    
-    $(".menu").on('click', function() {
-       openNav(); 
-    });
-    
-    $(".closebtn").on('click', function() {
-       closeNav(); 
-    });
-    
     $(".scrollTop").on('click', function(event) {
         if (this.hash !== "") {
             event.preventDefault();
@@ -65,4 +41,15 @@ $(document).ready(function() {
         }
     });
     
+    $show = 0;
+    $("#innovation").on('click', function() {
+        if ($show == 0) {
+            $show = 1;
+            $(".dropdown-ul").css('display', 'block');   
+        } else {
+            $show = 0;
+            $(".dropdown-ul").css('display', 'none');
+        }
+    });
+    $(".button-collapse").sideNav();
 });

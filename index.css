@@ -15,6 +15,10 @@ html {
     overflow-x: hidden;
 }
 
+a, a:active, a:visited {
+    text-decoration: none !important;
+}
+
 @font-face {
     font-family: font;
     src: url(myFont.otf);
@@ -49,7 +53,7 @@ html {
     position: relative;
     width: 100%;
     margin: 0 auto;
-    margin-top: 300px;
+    margin-top: 300px !important;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 7px;
 }
@@ -96,8 +100,8 @@ html {
 
 .icon-div {
     position: relative;
-    margin-top: 500px;
-    margin-bottom: 700px;
+    margin-top: 500px !important;
+    margin-bottom: 700px !important;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -217,51 +221,9 @@ a:hover {
     z-index: -1;
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: width 300ms cubic-bezier(0.2, 0.7, 0.5, 1);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-.sidenav a {
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color: #f5f5f5;
-    display: block;
-    transition: 0.3s
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: -10px;
-    right: 25px;
-    font-size: 60px;
-    margin-left: 50px;
-}
-
-#stage {
-    width: 100% !important;
-    transition: all 300ms cubic-bezier(0.2, 0.7, 0.5, 1);
-    margin-left: 0px;
-}
-
 .menu {
     position: fixed;
-    z-index: 1000;
+    z-index: 90;
     width: 40px !important;
     height: 60px !important;
     top: 30px;
@@ -355,6 +317,58 @@ a:hover {
     color: #000 !important;
 }
 
+.side-links {
+    background-color: transparent;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.side-links:hover {
+    background-color: #fff;
+    color: #111111 !important;
+}
+
+.list-items {
+    color: #3F3F3F !important;
+    font-weight: 100 !important;
+}
+
+.btn1 {
+    position: relative;
+    margin: 0 auto;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.btn1:after {
+    position: relative;
+    content: '\f125';
+    color: #000;
+    font-family: 'Ionicons';
+    font-size: 21px;
+    left: 60px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.btn1:hover {
+    color: #000;
+    background-color: #fff;
+    border: 3px solid #fff;
+}
+
+.btn1:hover:after {
+    left: 20px;
+}
+
 @media (min-width: 768px) { 
     #logoImg {
         width: 140px;
@@ -384,7 +398,7 @@ a:hover {
         position: relative;
         max-width: 60%;
         margin: 0 auto;
-        margin-top: 500px;
+        margin-top: 500px !important;
         background-color: rgba(0, 0, 0, 0.6);
         border-radius: 7px;
     }
@@ -427,8 +441,8 @@ a:hover {
     
     .icon-div {
         position: relative;
-        margin-top: 500px;
-        margin-bottom: 700px;
+        margin-top: 500px !important;
+        margin-bottom: 700px !important;
         background-color: rgba(0, 0, 0, 0.6);
     }
     

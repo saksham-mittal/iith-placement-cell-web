@@ -16,17 +16,82 @@
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
       
     </head>
     <body>
         
-        <div id="mySidenav" class="sidenav text-center">
-            <a href="javascript:void(0)" class="closebtn" style="font-weight: 200;">&times;</a>
-            <img class='mt-3 mb-4' src="iithLogo.png" style="width: 100px; height: auto;">
-            <a class='p-3' href="#">Home</a>
-            <a class='p-3' href="#">Recruiter</a>
-            <a class='p-3' href="#">Contact</a>
-            <a class='p-3' href="#">UG Programs</a>
+        <div class="sidenav">
+            <ul id="slide-out" class="side-nav">
+                <li>
+                    <div class="user-view text-center pb-5">
+                        <div class="background">
+                            <img src="back.jpg">
+                        </div>        
+                        <img class="circle" src="iithLogo.png" style="margin-left: 90px;">
+                    </div>
+                </li>
+                <li><a class="waves-effect" href="#!">Placement Process</a></li>
+                <li><a class="waves-effect" href="#!">Internships</a></li>
+                <li><a class="waves-effect" href="#!">Important Dates</a></li>
+                <li class="pl-3">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Innovations @ IITH</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!" class="list-items">Fractal Academics</a></li>
+                                    <li><a href="#!" class="list-items">ES</a></li>
+                                    <li><a href="#!" class="list-items">Double Major</a></li>
+                                    <li><a href="#!" class="list-items">Japan Colloaboration</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pl-3">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Why IITH</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!" class="list-items">Selection Process</a></li>
+                                    <li><a href="#!" class="list-items">World Class Faculty</a></li>
+                                    <li><a href="#!" class="list-items">Alumni</a></li>
+                                    <li><a href="#!" class="list-items">Rankings</a></li>
+                                    <li><a href="#!" class="list-items">R &amp; D</a></li>
+                                    <li><a href="#!" class="list-items">All Round Development</a></li>
+                                    <li><a href="#!" class="list-items">News</a></li>
+                                    <li><a href="#!" class="list-items">Quotes</a></li>
+                                    <li><a href="#!" class="list-items">Recruiters Speak</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="waves-effect" href="#!">Academics</a></li>
+                <li><a class="waves-effect" href="#!">Student Profile</a></li>
+                <li class="pl-3">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Downloads</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!" class="list-items">Invitation letter</a></li>
+                                    <li><a href="#!" class="list-items">Institute Brochure</a></li>
+                                    <li><a href="#!" class="list-items">Department Wise Brochures</a></li>
+                                    <li><a href="#!" class="list-items">Placement Statistics</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><div class="divider"></div></li>
+                <li><a class="waves-effect" href="#!">Contact Us</a></li>
+                <li><a class="waves-effect" href="#!">Website credits</a></li>
+            </ul>
         </div>
         
         <div id="top"></div>
@@ -34,16 +99,21 @@
         <div id="overlay-dark"></div>
         
         <div id="stage">
-            <div class="menu">
+            <div data-activates="slide-out" class="menu button-collapse">
                 <div class="line mb-2"></div>
                 <div class="line mb-2"></div>
                 <div class="line"></div>
             </div>
             
             <div class="container text-center" id="contentHeading">
-                <img class="normal1 mb-4 up1" src="iithLogo.png" id="logoImg">
-                <h1 class="normal1 mb-4 up1" id="mainHeading">TRAINING AND PLACEMENT CELL</h1>
+                <img class="normal1 mt-0 mb-4 up1" src="iithLogo.png" id="logoImg">
+                <h1 class="normal1 mt-2 mb-4 up1" id="mainHeading">TRAINING AND PLACEMENT CELL</h1>
                 <p class="normal1 mb-4 lead up1" id="txtHeading">Indian Institute Of Technology, Hyderabad</p>
+                    
+                <div class="normal1 row up1 mt-5">
+                    <div class="col-md-6 mb-3"><div class="btn1 p-3 pl-5 pr-5" style="float: right;">STUDENT LOGIN</div></div>
+                    <div class="col-md-6"><div class="btn1 p-3 pl-5 pr-5" style="float: left;">RECRUITER LOGIN</div></div>
+                </div>
             </div>
 
             <div class="normal row container quote-div p-5 up">
@@ -61,7 +131,7 @@
             </div>
 
             <div class="row fluid-container icon-div p-0 ml-0 mr-0">
-                <div class="col-md-3 p-5 m-0">
+                <div class="col-md-3 p-3 pt-5 pb-5 m-0">
                     <div class="normal2 container text-center move1">
                         <div class="iconCont text-center">
                             <i class="iconList icon ion-university"></i>
@@ -72,7 +142,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-3 p-5 m-0">
+                <div class="col-md-3 p-3 pt-5 pb-5 m-0">
                     <div class="normal2 container text-center move2">
                         <div class="iconCont text-center">
                             <i class="iconList icon ion-stats-bars"></i>
@@ -83,7 +153,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-3 p-5 m-0">
+                <div class="col-md-3 p-3 pt-5 pb-5 m-0">
                     <div class="normal2 container text-center move3">
                         <div class="iconCont text-center">
                             <i class="iconList icon ion-calendar"></i>
@@ -94,7 +164,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-3 p-5 m-0">
+                <div class="col-md-3 p-3 pt-5 pb-5 m-0">
                     <div class="normal2 container text-center move4">
                         <div class="iconCont text-center">
                             <i class="iconList icon ion-android-people"></i>
@@ -259,6 +329,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBScXT-FpInO1bdeFEzehr7PtLMlglTGS4&callback=initMap"></script>
         <script src="index.js" type="text/javascript"></script>
+        
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         
     </body>
     
