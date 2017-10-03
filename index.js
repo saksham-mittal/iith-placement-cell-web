@@ -2,6 +2,7 @@ $(document).ready(function() {
     $('.normal1').removeClass('up1');
     
     var $content = $('.normal');
+    $('.modal').modal();
     $(document).on('scroll', function() {
         $content.each(function(index) {
             if ($(document).scrollTop() > $(this).offset().top/2 && $(this).hasClass('up')) {

@@ -330,7 +330,7 @@ a:hover {
 
 .list-items {
     color: #3F3F3F !important;
-    font-weight: 100 !important;
+    font-weight: 300 !important;
 }
 
 .btn1 {
@@ -367,6 +367,9 @@ a:hover {
 
 .btn1:hover:after {
     left: 20px;
+}
+
+#modal1 {
 }
 
 @media (min-width: 768px) { 
@@ -534,5 +537,12 @@ a:hover {
     
     .footer {
         font-size: 12px;
+    }
+    
+    #modal1 {
+        top: 50px !important;
+        width: 40% !important;
+        height: 418px !important;
+        border-radius: 4px;
     }
 }
