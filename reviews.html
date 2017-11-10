@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+      
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200, 600, 800" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        
+        <link rel="stylesheet" type="text/css" media="screen" href="https://www.jazzhr.com/wp-content/themes/jazz/style.css" />
+
+        <link rel='stylesheet' id='jquery-bxslider-css'  href='https://www.jazzhr.com/wp-content/plugins/bb-plugin/css/jquery.bxslider.css?ver=1.8.1' type='text/css' media='all' />
+        <link rel='stylesheet' id='fl-builder-layout-13-css'  href='https://www.jazzhr.com/wp-content/uploads/bb-plugin/cache/13-layout.css?ver=b6f63160b25b0ae66b21d48637d0f12e' type='text/css' media='all' />
+        <link rel='stylesheet' id='gglcptch-css'  href='https://www.jazzhr.com/wp-content/plugins/google-captcha/css/gglcptch.css?ver=1.31' type='text/css' media='all' />
+        <link rel='stylesheet' id='popup-maker-site-css'  href='https://www.jazzhr.com/wp-content/plugins/popup-maker/assets/css/site.min.css?ver=1.6.5' type='text/css' media='all' />
+        <link rel='stylesheet' id='main-css'  href='https://www.jazzhr.com/wp-content/themes/jazz/assets/css/main.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='gforms_reset_css-css'  href='https://www.jazzhr.com/wp-content/plugins/gravityforms/css/formreset.min.css?ver=2.2.5' type='text/css' media='all' />
+        <link rel='stylesheet' id='gforms_formsmain_css-css'  href='https://www.jazzhr.com/wp-content/plugins/gravityforms/css/formsmain.min.css?ver=2.2.5' type='text/css' media='all' />
+        <link rel='stylesheet' id='gforms_ready_class_css-css'  href='https://www.jazzhr.com/wp-content/plugins/gravityforms/css/readyclass.min.css?ver=2.2.5' type='text/css' media='all' />
+        <link rel='stylesheet' id='gforms_browsers_css-css'  href='https://www.jazzhr.com/wp-content/plugins/gravityforms/css/browsers.min.css?ver=2.2.5' type='text/css' media='all' />
+        <link rel='stylesheet' id='addthis_all_pages-css'  href='https://www.jazzhr.com/wp-content/plugins/addthis/frontend/build/addthis_wordpress_public.min.css?ver=4.8.2' type='text/css' media='all' />
+
+        <link rel="icon" href="iithLogoNoText.png" sizes="192x192" />
+        
+        <style type="text/css">
+            
+            body, html {
+                background-color: #F5F6F9 !important;
+            }
+            
+            a, a:active, a:visited {
+                text-decoration: none !important;
+            }
+            
+            #logoImg {
+                width: 140px;
+                height: 140px;
+                z-index: 10;
+            }
+
+            #contentHeading {
+                max-width: 100%;
+                margin-top: 85px;
+                margin-bottom: 100px;
+            }
+
+            #mainHeading {
+                font-family: 'Raleway', sans-serif;
+                line-height: 55px;
+                letter-spacing: 4px;
+                color: #262626;
+                font-weight: 200;
+                font-size: 40px;
+            }
+
+            #txtHeading {
+                font-size: 15px;
+                color: #262626;
+            }
+            
+            .menu {
+                position: fixed;
+                z-index: 90;
+                width: 40px !important;
+                height: 60px !important;
+                top: 30px;
+                left: 30px;
+                cursor: pointer;
+            }
+
+            .line {
+                width: 30px;
+                height: 2px;
+                background-color: #262626;
+            }
+            
+            .list-items {
+                color: #3F3F3F !important;
+                font-weight: 300 !important;
+            }
+            
+            .footer {
+                position: relative;
+                bottom: 0 !important;
+                width: 100%;
+                line-height: 60px;
+                color: #fff;
+                font-size: 10px;
+            }
+
+            
+            @media (min-width: 768px) {
+            
+                #logoImg {
+                    width: 140px;
+                    height: 140px;
+                    z-index: 10;
+                }
+
+                #contentHeading {
+                    max-width: 60%;
+                    margin-top: 105px;
+                    margin-bottom: 100px;
+                }
+
+                #mainHeading {
+                    font-family: 'Raleway', sans-serif;
+                    line-height: 75px;
+                    letter-spacing: 4px;
+                    color: #262626;
+                    font-weight: 200;
+                    font-size: 60px;
+                }
+
+                #txtHeading {
+                    color: #262626;
+                }
+                
+            }
+        
+        </style>
+      
+    </head>
+    <body>
+        
+        
+        <div class="container-fluid p-0 pt-3" style="background-color: #F4F5F7 !important; height: 100%;">
+        <div class="sidenav">
+            <ul id="slide-out" class="side-nav">
+                <li>
+                    <div class="user-view text-center pb-5">
+                        <div class="background">
+                            <img src="back.jpg">
+                        </div>        
+                        <img class="circle" src="iithLogo.png" style="margin-left: 90px;">
+                    </div>
+                </li>
+                <li><a class="waves-effect" href="index.html">Home</a></li>
+                <li><a class="waves-effect" href="#!">Placement Process</a></li>
+                <li><a class="waves-effect" href="#!">Internships</a></li>
+                <li><a class="waves-effect" href="#!">Important Dates</a></li>
+                <li class="pl-3">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Innovations @ IITH</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!" class="list-items">Fractal Academics</a></li>
+                                    <li><a href="#!" class="list-items">ES</a></li>
+                                    <li><a href="#!" class="list-items">Double Major</a></li>
+                                    <li><a href="#!" class="list-items">Japan Colloaboration</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pl-3">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Why IITH</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!" class="list-items">Selection Process</a></li>
+                                    <li><a href="#!" class="list-items">World Class Faculty</a></li>
+                                    <li><a href="#!" class="list-items">Alumni</a></li>
+                                    <li><a href="#!" class="list-items">Rankings</a></li>
+                                    <li><a href="#!" class="list-items">R &amp; D</a></li>
+                                    <li><a href="#!" class="list-items">All Round Development</a></li>
+                                    <li><a href="#!" class="list-items">News</a></li>
+                                    <li><a href="#!" class="list-items">Quotes</a></li>
+                                    <li><a href="#!" class="list-items">Recruiters Speak</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="waves-effect" href="#!">Academics</a></li>
+                <li><a class="waves-effect" href="#!">Student Profile</a></li>
+                <li class="pl-3">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Downloads</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!" class="list-items">Invitation letter</a></li>
+                                    <li><a href="#!" class="list-items">Institute Brochure</a></li>
+                                    <li><a href="#!" class="list-items">Department Wise Brochures</a></li>
+                                    <li><a href="#!" class="list-items">Placement Statistics</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><div class="divider"></div></li>
+                <li><a class="waves-effect" href="#!">Contact Us</a></li>
+                <li><a class="waves-effect" href="#!">Website credits</a></li>
+            </ul>
+        </div>
+        
+        <div data-activates="slide-out" class="menu button-collapse">
+            <div class="line mb-2"></div>
+            <div class="line mb-2"></div>
+            <div class="line"></div>
+        </div>
+        
+        <div class="container text-center" id="contentHeading">
+            <img class="mt-0 mb-4" src="iithLogoDark.png" id="logoImg">
+            <h1 class="mt-2 mb-2" id="mainHeading">REVIEWS</h1>
+            <p class="mb-4 lead" id="txtHeading">Indian Institute Of Technology, Hyderabad</p>
+        </div>
+        
+        <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-57d6ec6454211" data-node="57d6ec6454211">
+	<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-57d6ec6453fc6" data-node="57d6ec6453fc6">
+			<div class="fl-col fl-node-57d6ec6454019 fl-col-small" data-node="57d6ec6454019" style="width: 33.33%;">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-57d6ec645411f" data-node="57d6ec645411f" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="margin: 0px; font-size: 20px; color: #21202f; text-align: center;">Efficient and Smooth</p>
+<p style="font-size: 14px; line-height: 22px; padding-top: 5px; padding-bottom: 0px; text-align: center; color: #73828b; margin-bottom:15px;"><i class="fa fa-quote-left" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i> We were using spreadsheets and resumes stored on various sites—you made the process much more efficient and streamlined. <i class="fa fa-quote-right" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i></p>
+</div>	</div>
+</div><div class="fl-module fl-module-photo fl-node-57d6ec6454261" data-node="57d6ec6454261" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="http://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img class="fl-photo-img wp-image-855 size-full" src="https://www.jazzhr.com/wp-content/uploads/2016/02/testimonial-image_lofurno.png" alt="testimonial-image_lofurno" itemprop="image"  />
+		    
+			</div>
+	</div>	</div>
+</div><div class="fl-module fl-module-rich-text fl-node-57d6ec6454490" data-node="57d6ec6454490" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="font-family: BrandonText-Regular; font-size: 18px; text-align: center; margin-bottom:10px;">Judy Lofurno</p>
+</div>	</div>
+</div><div class="fl-module fl-module-heading fl-node-57d6ec645439e ls-half all-caps" data-node="57d6ec645439e" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">Employment Specialist</span>
+	</h2>	</div>
+</div><div class="fl-module fl-module-html fl-node-57d6ec645576c" data-node="57d6ec645576c" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-html">
+	<div style="height:60px!important;">&nbsp;</div></div>	</div>
+</div>	</div>
+</div>	
+
+
+<div class="fl-col fl-node-57d6ec6454074 fl-col-small" data-node="57d6ec6454074" style="width: 33.34%;">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-57d6ec64542b0" data-node="57d6ec64542b0" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="margin: 0px; font-size: 20px; color: #21202f; text-align: center;">Intuitive and Easy</p>
+<p style="font-size: 14px; line-height: 22px; padding-top: 5px; padding-bottom: 0px; text-align: center; color: #73828b; margin-bottom: 15px;"><i class="fa fa-quote-left" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i> It is so easy to learn! Whoever you have doing UX, I want them to work here because it's so intuitive and easy to use! <i class="fa fa-quote-right" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i></p>
+</div>	</div>
+</div><div class="fl-module fl-module-photo fl-node-57d6ec64542ff" data-node="57d6ec64542ff" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="http://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img class="fl-photo-img wp-image-854 size-full" src="https://www.jazzhr.com/wp-content/uploads/2016/02/testimonial-image_meier.png" alt="testimonial-image_meier" itemprop="image"  />
+		    
+			</div>
+	</div>	</div>
+</div><div class="fl-module fl-module-rich-text fl-node-57d6ec64544e6" data-node="57d6ec64544e6" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="font-family: BrandonText-Regular; font-size: 18px; text-align: center; margin-bottom: 10px;">Angie Meier</p>
+</div>	</div>
+</div><div class="fl-module fl-module-heading fl-node-57d6ec64543ed ls-half all-caps" data-node="57d6ec64543ed" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">Recruiter</span>
+	</h2>	</div>
+</div><div class="fl-module fl-module-html fl-node-57d6ec64557c4" data-node="57d6ec64557c4" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-html">
+	<div style="height:60px!important;">&nbsp;</div></div>	</div>
+</div>	</div>
+</div>			<div class="fl-col fl-node-57d6ec64540ca fl-col-small" data-node="57d6ec64540ca" style="width: 33.33%;">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-57d6ec64541c1" data-node="57d6ec64541c1" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="margin: 0px; font-size: 20px; color: #21202f; text-align: center;">Cares About My Success</p>
+<p style="font-size: 14px; line-height: 22px; padding-top: 5px; padding-bottom: 0px; text-align: center; color: #73828b; margin-bottom: 15px;"><i class="fa fa-quote-left" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i>Everyone I’ve worked with, from my account manager to technical support, has proven they really care about my success.<i class="fa fa-quote-right" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i></p>
+</div>	</div>
+</div><div class="fl-module fl-module-photo fl-node-57d6ec6454171" data-node="57d6ec6454171" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="http://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img class="fl-photo-img wp-image-856 size-full" src="https://www.jazzhr.com/wp-content/uploads/2016/02/testimonial-image_cunningham.png" alt="testimonial-image_cunningham" itemprop="image"  />
+		    
+			</div>
+	</div>	</div>
+</div><div class="fl-module fl-module-rich-text fl-node-57d6ec645443c" data-node="57d6ec645443c" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="font-family: BrandonText-Regular; font-size: 18px; text-align: center; margin-bottom: 10px;">Tess Cunningham</p>
+</div>	</div>
+</div><div class="fl-module fl-module-heading fl-node-57d6ec645434f ls-half all-caps" data-node="57d6ec645434f" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">Talent Acquisition Manager</span>
+	</h2>	</div>
+</div><div class="fl-module fl-module-html fl-node-57d6ec6455712" data-node="57d6ec6455712" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-html">
+	<div style="height:60px!important;">&nbsp;</div></div>	</div>
+</div>	</div>
+</div>	</div>
+		</div>
+	</div>
+</div><div class="fl-row fl-row-full-width fl-row-bg-color fl-node-57d6ec6454af6" data-node="57d6ec6454af6">
+	<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-57d6ec6454b4d" data-node="57d6ec6454b4d">
+			<div class="fl-col fl-node-57d6ec6454ba5 fl-col-small" data-node="57d6ec6454ba5" style="width: 33.33%;">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-57d6ec6454bfa" data-node="57d6ec6454bfa" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="margin: 0px; font-size: 20px; color: #21202f; text-align: center;">Saves 10+ Hours</p>
+<p style="font-size: 14px; line-height: 22px; padding-top: 5px; padding-bottom: 0px; text-align: center; color: #73828b; margin-bottom: 15px;"><i class="fa fa-quote-left" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i> HR is so easy; it’s so much more efficient. It saves at least 10 hours a month for each of our hiring managers. <i class="fa fa-quote-right" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i></p>
+</div>	</div>
+</div><div class="fl-module fl-module-photo fl-node-57d6ec6454c4f" data-node="57d6ec6454c4f" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="http://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img class="fl-photo-img wp-image-857 size-full" src="https://www.jazzhr.com/wp-content/uploads/2016/02/testimonial-image_ahrens.png" alt="testimonial-image_ahrens" itemprop="image"  />
+		    
+			</div>
+	</div>	</div>
+</div><div class="fl-module fl-module-rich-text fl-node-57d6ec6454cac" data-node="57d6ec6454cac" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="font-family: BrandonText-Regular; font-size: 18px; text-align: center; margin-bottom: 10px;">Emily Ahrens</p>
+</div>	</div>
+</div><div class="fl-module fl-module-heading fl-node-57d6ec6454d01 ls-half all-caps" data-node="57d6ec6454d01" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">Head of HR</span>
+	</h2>	</div>
+</div><div class="fl-module fl-module-html fl-node-57d6ec6455916" data-node="57d6ec6455916" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-html">
+	<div style="height:60px!important;">&nbsp;</div></div>	</div>
+</div>	</div>
+</div>			<div class="fl-col fl-node-57d6ec6454d51 fl-col-small" data-node="57d6ec6454d51" style="width: 33.34%;">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-57d6ec6454da1" data-node="57d6ec6454da1" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="margin: 0px; font-size: 20px; color: #21202f; text-align: center;">A True Blessing</p>
+<p style="font-size: 14px; line-height: 22px; padding-top: 5px; padding-bottom: 0px; text-align: center; color: #73828b; margin-bottom: 15px;"><i class="fa fa-quote-left" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i> If I had to follow candidates through each of these positions without JazzHR, there’s no way I could have done it. <i class="fa fa-quote-right" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i></p>
+</div>	</div>
+</div><div class="fl-module fl-module-photo fl-node-57d6ec6454df1" data-node="57d6ec6454df1" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="http://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img class="fl-photo-img wp-image-853 size-full" src="https://www.jazzhr.com/wp-content/uploads/2016/02/testimonial-image_nirenstein.png" alt="testimonial-image_nirenstein" itemprop="image"  />
+		    
+			</div>
+	</div>	</div>
+</div><div class="fl-module fl-module-rich-text fl-node-57d6ec6454e56" data-node="57d6ec6454e56" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="font-family: BrandonText-Regular; font-size: 18px; text-align: center; margin-bottom: 10px;">Brenda Nirenstein</p>
+</div>	</div>
+</div><div class="fl-module fl-module-heading fl-node-57d6ec6454eb1 ls-half all-caps" data-node="57d6ec6454eb1" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">Director of Administration</span>
+	</h2>	</div>
+</div><div class="fl-module fl-module-html fl-node-57d6ec64558c7" data-node="57d6ec64558c7" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-html">
+	<div style="height:60px!important;">&nbsp;</div></div>	</div>
+</div>	</div>
+</div>			<div class="fl-col fl-node-57d6ec6454f03 fl-col-small" data-node="57d6ec6454f03" style="width: 33.33%;">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-57d6ec6454f53" data-node="57d6ec6454f53" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="margin: 0px; font-size: 20px; color: #21202f; text-align: center;">Reaches More Job Seekers</p>
+<p style="font-size: 14px; line-height: 22px; padding-top: 5px; padding-bottom: 0px; text-align: center; color: #73828b; margin-bottom: 15px;"><i class="fa fa-quote-left" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i> It has given us a simple way to reach tons of job seekers and a quick process to quickly filter through them for the best candidates. <i class="fa fa-quote-right" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i></p>
+</div>	</div>
+</div><div class="fl-module fl-module-photo fl-node-57d6ec6454fa4" data-node="57d6ec6454fa4" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="http://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img class="fl-photo-img wp-image-852 size-full" src="https://www.jazzhr.com/wp-content/uploads/2016/02/testimonial-image_pritzker.png" alt="testimonial-image_pritzker" itemprop="image"  />
+		    
+			</div>
+	</div>	</div>
+</div><div class="fl-module fl-module-rich-text fl-node-57d6ec645500c" data-node="57d6ec645500c" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="font-family: BrandonText-Regular; font-size: 18px; text-align: center; margin-bottom: 10px;">Yan Pritzker</p>
+</div>	</div>
+</div><div class="fl-module fl-module-heading fl-node-57d6ec6455061 ls-half all-caps" data-node="57d6ec6455061" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">CTO</span>
+	</h2>	</div>
+</div><div class="fl-module fl-module-html fl-node-57d6ec645581d" data-node="57d6ec645581d" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-html">
+	<div style="height:60px!important;">&nbsp;</div></div>	</div>
+</div>	</div>
+</div>	</div>
+		</div>
+	</div>
+</div><div class="fl-row fl-row-full-width fl-row-bg-color fl-node-57d6ec64550b1" data-node="57d6ec64550b1">
+	<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-57d6ec6455100" data-node="57d6ec6455100">
+			<div class="fl-col fl-node-57d6ec6455150 fl-col-small" data-node="57d6ec6455150" style="width: 33.33%;">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-57d6ec64551d4" data-node="57d6ec64551d4" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="margin: 0px; font-size: 20px; color: #21202f; text-align: center;">A Great Experience</p>
+<p style="font-size: 14px; line-height: 22px; padding-top: 5px; padding-bottom: 0px; text-align: center; color: #73828b; margin-bottom: 15px;"><i class="fa fa-quote-left" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i> Balanced between ease of use and power features to hire effectively, it provides a great applicant experience. <i class="fa fa-quote-right" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i></p>
+</div>	</div>
+</div><div class="fl-module fl-module-photo fl-node-57d6ec6455230" data-node="57d6ec6455230" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="http://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img class="fl-photo-img wp-image-872 size-full" src="https://www.jazzhr.com/wp-content/uploads/2016/02/testimonial-image_turner.png" alt="testimonial-image_turner" itemprop="image"  />
+		    
+			</div>
+	</div>	</div>
+</div><div class="fl-module fl-module-rich-text fl-node-57d6ec6455280" data-node="57d6ec6455280" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="font-family: BrandonText-Regular; font-size: 18px; text-align: center; margin-bottom: 10px;">Chris Turner</p>
+</div>	</div>
+</div><div class="fl-module fl-module-heading fl-node-57d6ec64552d0 ls-half all-caps" data-node="57d6ec64552d0" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">Talent Scout</span>
+	</h2>	</div>
+</div><div class="fl-module fl-module-html fl-node-57d6ec6455969" data-node="57d6ec6455969" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-html">
+	<div style="height:60px!important;">&nbsp;</div></div>	</div>
+</div>	</div>
+</div>			<div class="fl-col fl-node-57d6ec645531f fl-col-small" data-node="57d6ec645531f" style="width: 33.34%;">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-57d6ec645536e" data-node="57d6ec645536e" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="margin: 0px; font-size: 20px; color: #21202f; text-align: center;">Unparalleled Support</p>
+<p style="font-size: 14px; line-height: 22px; padding-top: 5px; padding-bottom: 0px; text-align: center; color: #73828b; margin-bottom: 15px;"><i class="fa fa-quote-left" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i> My account manager is always quick to address any issues. And if he can't fix them, he finds someone who can. <i class="fa fa-quote-right" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i></p>
+</div>	</div>
+</div><div class="fl-module fl-module-photo fl-node-57d6ec64553bd" data-node="57d6ec64553bd" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="http://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img class="fl-photo-img wp-image-870 size-full" src="https://www.jazzhr.com/wp-content/uploads/2016/02/testimonial-image_farler.png" alt="testimonial-image_farler" itemprop="image"  />
+		    
+			</div>
+	</div>	</div>
+</div><div class="fl-module fl-module-rich-text fl-node-57d6ec6455467" data-node="57d6ec6455467" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="font-family: BrandonText-Regular; font-size: 18px; text-align: center; margin-bottom: 10px;">Carrie Farler</p>
+</div>	</div>
+</div><div class="fl-module fl-module-heading fl-node-57d6ec64554c8 ls-half all-caps" data-node="57d6ec64554c8" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">Talent Director</span>
+	</h2>	</div>
+</div><div class="fl-module fl-module-html fl-node-57d6ec64559b7" data-node="57d6ec64559b7" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-html">
+	<div style="height:60px!important;">&nbsp;</div></div>	</div>
+</div>	</div>
+</div>			<div class="fl-col fl-node-57d6ec645551b fl-col-small" data-node="57d6ec645551b" style="width: 33.33%;">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-57d6ec6455580" data-node="57d6ec6455580" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="margin: 0px; font-size: 20px; color: #21202f; text-align: center;">Keeps Things Centralized</p>
+<p style="font-size: 14px; line-height: 22px; padding-top: 5px; padding-bottom: 0px; text-align: center; color: #73828b; margin-bottom: 15px;"><i class="fa fa-quote-left" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i> It helps us to keep everything in a centralized location, so we don't have to spend time as a team looking around for resumes anymore. <i class="fa fa-quote-right" style="color: #a9b9c8; margin-top: 0px; margin-bottom: 0px; font-size: 9px; vertical-align: super;"></i></p>
+</div>	</div>
+</div><div class="fl-module fl-module-photo fl-node-57d6ec64555da" data-node="57d6ec64555da" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="http://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img class="fl-photo-img wp-image-871 size-full" src="https://www.jazzhr.com/wp-content/uploads/2016/02/testimonial-image_fontes.png" alt="testimonial-image_fontes" itemprop="image"  />
+		    
+			</div>
+	</div>	</div>
+</div><div class="fl-module fl-module-rich-text fl-node-57d6ec6455642" data-node="57d6ec6455642" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="font-family: BrandonText-Regular; font-size: 18px; text-align: center; margin-bottom: 10px;">Charisse Fontes</p>
+</div>	</div>
+</div><div class="fl-module fl-module-heading fl-node-57d6ec645569d ls-half all-caps" data-node="57d6ec645569d" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">Director of Ops</span>
+	</h2>	</div>
+</div><div class="fl-module fl-module-html fl-node-57d6ec6455874" data-node="57d6ec6455874" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-html">
+	<div style="height:60px!important;">&nbsp;</div></div>	</div>
+</div>	</div>
+</div>	</div>
+		</div>
+	</div>
+</div>
+        
+        <div class="footer p-0" style="background-color: #F4F5F7 !important;">
+             <div class="fluid-container text-center" style="background-color: rgba(0, 0, 0, 0.9);">
+                COPYRIGHT <strong>&copy; <a href="http://www.iith.ac.in/" style='color: #47c9e5;'>Indian Institute Of Technology, Hyderabad</a></strong> - 2017
+            </div>
+        </div>
+    </div>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        
+    </body>
+    
+</html>
