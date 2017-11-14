@@ -42,8 +42,12 @@
                 height: 680px; /*same height as jumbotron */
                 top: 0;
                 left: 0;
-                z-index: -1;
-                transform: scale(1.6, 1.6);
+                transform: scale(1.2, 1.2);
+                -webkit-filter: blur(2px);
+                -moz-filter: blur(2px);
+                -o-filter: blur(2px);
+                -ms-filter: blur(2px);
+                filter: blur(2px);
             }
             a, a:active, a:visited {
                 text-decoration: none !important;
@@ -141,8 +145,6 @@
     </head>
     <body>
         
-        
-        <div class="container-fluid p-0 pt-3" style="background-color: #F4F5F7 !important; height: 100%;">
         <div class="sidenav">
             <ul id="slide-out" class="side-nav">
                 <li>
@@ -222,7 +224,7 @@
         </div>
             
         <div class="bg"></div>
-        <div class="jumbotron jumbotron-fluid p-0 mb-0">
+        <div class="jumbotron jumbotron-fluid mt-0 p-0 mb-0">
             <div class="container-fluid text-center m-0 p-5" style='padding-top: 100px !important; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: #fff;'>
                 <div class="container text-center" id="contentHeading">
                     <img class="mt-0 mb-4" src="iithLogo.png" id="logoImg">
@@ -232,7 +234,7 @@
             </div>
         </div>
             
-        <div class="fluid-container pb-5" style="background-color: #F5F6F9; padding-top: 100px;">
+        <div class="fluid-container mt-0 pb-5" style="background-color: #F5F6F9;">
                 <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-57d6ec6454211" data-node="57d6ec6454211">
             <div class="fl-row-content-wrap">
                         <div class="fl-row-content fl-row-fixed-width fl-node-content">
@@ -547,7 +549,6 @@
                 COPYRIGHT <strong>&copy; <a href="http://www.iith.ac.in/" style='color: #47c9e5;'>Indian Institute Of Technology, Hyderabad</a></strong> - 2017
             </div>
         </div>
-    </div>
         
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
