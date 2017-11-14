@@ -19,12 +19,34 @@
         <style type="text/css">
             
             body {
-                background-color: #F5F6F9;
+                margin: 0;
+                padding: 0;
             }
             
+            .bg {
+                background: url('internship.png') no-repeat center center;
+                position: fixed;
+                width: 100%;
+                height: 680px; /*same height as jumbotron */
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transform: scale(1.6, 1.6);
+                -webkit-filter: blur(3px);
+                -moz-filter: blur(3px);
+                -o-filter: blur(3px);
+                -ms-filter: blur(3px);
+                filter: blur(3px);
+            }
             a, a:active, a:visited {
                 text-decoration: none !important;
             } 
+            
+            .jumbotron {
+                width: 100%;
+                height: 680px;
+                background-color: transparent;
+            }
             
             #logoImg {
                 width: 140px;
@@ -42,14 +64,14 @@
                 font-family: 'Raleway', sans-serif;
                 line-height: 55px;
                 letter-spacing: 4px;
-                color: #262626;
+                color: #fff;
                 font-weight: 200;
                 font-size: 40px;
             }
 
             #txtHeading {
                 font-size: 15px;
-                color: #262626;
+                color: #fff;
             }
             
             .menu {
@@ -65,7 +87,7 @@
             .line {
                 width: 30px;
                 height: 2px;
-                background-color: #262626;
+                background-color: #fff;
             }
             
             .list-items {
@@ -117,14 +139,9 @@
                     font-family: 'Raleway', sans-serif;
                     line-height: 75px;
                     letter-spacing: 4px;
-                    color: #262626;
                     font-weight: 200;
                     font-size: 60px;
-                }
-
-                #txtHeading {
-                    color: #262626;
-                }                
+                }               
             }
         
         </style>
@@ -210,45 +227,61 @@
             <div class="line"></div>
         </div>
         
-        <div class="container text-center" id="contentHeading">
-            <img class="mt-0 mb-4" src="iithLogoDark.png" id="logoImg">
-            <h1 class="mt-2 mb-2" id="mainHeading">SUMMER INTERNSHIPS</h1>
-            <p class="mb-4 lead" id="txtHeading">Indian Institute Of Technology, Hyderabad</p>
-        </div>
-            
-        <div class="container content-process lead mb-5 pb-5">
-            On an average more than 70% students have shown a keen interest in the internships which indicates their inclination to obtain a practical experience of the subject in the real time industry setting. We have some of the reputed companies and universities for the year’s interns such as:<br><br>
-            <div class="row">
-                <div class="col-6">
-                    1. Apex Plus<br><br>
-                    2. Autodesk<br><br>
-                    3. Boeing<br><br>
-                    4. Amazon<br><br>
-                    5. Boston Scientific<br><br>
-                    6. Continental<br><br>
-                    7. Arcesium<br><br>
-                    8. Samsung Banglore<br><br>
-                    9. Chronus<br><br>
-                    10.Great Four<br><br>
-                    11. Volante<br><br>
-                    12. Philips Bangalore<br><br>
-                    13. Progress Software<br><br>
-                    14. Qualcomm<br><br>
-                    15. TCS<br><br>
-                </div>
-                <div class="col-6">
-                    16. Salesforce<br><br>
-                    17.Tata Sons<br><br>
-                    18. Wipro<br><br>
-                    19. Tata Steel<br><br>
-                    20. Zuti<br><br>
-                    21. Rakshak Foundation<br><br>
-                    22.Works App<br><br>
-                    23. UnitedHealth Group<br><br>
-                    24. Uurmi<br><br>
+        <div class="bg"></div>
+        <div class="jumbotron jumbotron-fluid p-0 mb-0">
+            <div class="container-fluid text-center m-0 p-5" style='padding-top: 100px !important; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: #fff;'>
+                <div class="container text-center" id="contentHeading">
+                    <img class="mt-0 mb-4" src="iithLogo.png" id="logoImg">
+                    <h1 class="mt-2 mb-2" id="mainHeading">SUMMER INTERNSHIPS</h1>
+                    <p class="mb-4 lead" id="txtHeading">Indian Institute Of Technology, Hyderabad</p>
                 </div>
             </div>
-            
+        </div>
+        
+        <div class="fluid-container pb-5" style="background-color: #F5F6F9; padding-top: 100px;">
+            <div class="container content-process lead mb-5 pb-5">
+                
+                <span style="font-weight: 500;">Time:</span> The internships for undergraduate students will be during the summer vacation months (May, June, July). Usually, the duration will be 8 to 10 weeks.<br><br>
+                <span style="font-weight: 500;">Eligibility:</span> The students who finished the 6th semester and going to 7th semester will be eligible. The second-year students who finished the 4th semester and going to 6th semester are also eligible if the company agrees.<br><br>
+                <span style="font-weight: 500;">Process:</span> The internship selection process will start in the month of January. Companies have to register in our AIMS portal and mention details of internship (such as eligibility criteria, location of work, profile of work, any allowance/stipend, travel support, accommodation etc.)
+                <span style="font-weight: 500;">Process:</span> The internship selection process will start in the month of January. Companies have to register in our AIMS portal and mention details of internship (such as eligibility criteria, location of work, profile of work, any allowance/stipend, travel support, accommodation etc.) <br><br>
+                <span style="font-weight: 500;">Selection:</span> Based on the details student will apply for internships, and some kind of selection process needs to be done to finalize. <br><br>
+                <span style="font-weight: 500;">Arrangements:</span> In the case of international internships for the final selected students travel arrangements need to be provided.<br><br>
+                <span style="font-weight: 500;">PPO (pre-placement offer):</span> If the company likes the student doing the internship, they can offer a permanent job to the student called PPO  within two months of completion of the internship. If the student accepts the PPO they can complete their studies at IITH and join the company.<br><br>
+                <br><br>
+                On an average more than 70% students have shown a keen interest in the internships which indicates their inclination to obtain a practical experience of the subject in the real time industry setting. We have some of the reputed companies and universities for the year’s interns such as:<br><br>
+                <div class="row">
+                    <div class="col-6">
+                        1. Apex Plus<br><br>
+                        2. Autodesk<br><br>
+                        3. Boeing<br><br>
+                        4. Amazon<br><br>
+                        5. Boston Scientific<br><br>
+                        6. Continental<br><br>
+                        7. Arcesium<br><br>
+                        8. Samsung Banglore<br><br>
+                        9. Chronus<br><br>
+                        10.Great Four<br><br>
+                        11. Volante<br><br>
+                        12. Philips Bangalore<br><br>
+                        13. Progress Software<br><br>
+                        14. Qualcomm<br><br>
+                        15. TCS<br><br>
+                    </div>
+                    <div class="col-6">
+                        16. Salesforce<br><br>
+                        17.Tata Sons<br><br>
+                        18. Wipro<br><br>
+                        19. Tata Steel<br><br>
+                        20. Zuti<br><br>
+                        21. Rakshak Foundation<br><br>
+                        22.Works App<br><br>
+                        23. UnitedHealth Group<br><br>
+                        24. Uurmi<br><br>
+                    </div>
+                </div>
+
+            </div>
         </div>
         
         <div class="footer">

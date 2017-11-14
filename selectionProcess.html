@@ -20,12 +20,33 @@
         <style type="text/css">
             
             body {
-                background-color: #F5F6F9;
+                padding: 0;
+                margin: 0;
             }
             
+            .bg {
+                background: url('selection.jpg') no-repeat center center;
+                position: fixed;
+                width: 100%;
+                height: 680px; /*same height as jumbotron */
+                top: 0;
+                left: 0;
+                z-index: -1;
+                -webkit-filter: blur(3px);
+                -moz-filter: blur(3px);
+                -o-filter: blur(3px);
+                -ms-filter: blur(3px);
+                filter: blur(3px);
+            }
             a, a:active, a:visited {
                 text-decoration: none !important;
             } 
+            
+            .jumbotron {
+                width: 100%;
+                height: 680px;
+                background-color: transparent;
+            }
             
             #logoImg {
                 width: 140px;
@@ -43,7 +64,7 @@
                 font-family: 'Raleway', sans-serif;
                 line-height: 55px;
                 letter-spacing: 4px;
-                color: #262626;
+                color: #fff;
                 font-weight: 200;
                 font-size: 40px;
                 text-transform: uppercase;
@@ -51,7 +72,7 @@
 
             #txtHeading {
                 font-size: 15px;
-                color: #262626;
+                color: #fff;
             }
             
             .menu {
@@ -67,7 +88,7 @@
             .line {
                 width: 30px;
                 height: 2px;
-                background-color: #262626;
+                background-color: #fff;
             }
             
             .list-items {
@@ -122,14 +143,9 @@
                     font-family: 'Raleway', sans-serif;
                     line-height: 75px;
                     letter-spacing: 4px;
-                    color: #262626;
                     font-weight: 200;
                     font-size: 60px;
-                }
-
-                #txtHeading {
-                    color: #262626;
-                }                
+                }             
             }
         
         </style>
@@ -215,32 +231,39 @@
             <div class="line"></div>
         </div>
         
-        <div class="container text-center" id="contentHeading">
-            <img class="mt-0 mb-4" src="iithLogoDark.png" id="logoImg">
-            <h1 class="mt-2 mb-2" id="mainHeading">Programmes & Selection Process</h1>
-            <p class="mb-4 lead" id="txtHeading">Indian Institute Of Technology, Hyderabad</p>
+        <div class="bg"></div>
+        <div class="jumbotron jumbotron-fluid p-0 mb-0">
+            <div class="container-fluid text-center m-0 p-5" style='padding-top: 100px !important; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: #fff;'>
+                <div class="container text-center" id="contentHeading">
+                    <img class="mt-0 mb-4" src="iithLogo.png" id="logoImg">
+                    <h1 class="mt-2 mb-2" id="mainHeading">Programmes & Selection Process</h1>
+                    <p class="mb-4 lead" id="txtHeading">Indian Institute Of Technology, Hyderabad</p>
+                </div>
+            </div>
         </div>
-            
-        <div class="container content-process lead mb-5 pb-5">
-            <span style="font-weight: 500;">Undergraduate( B.TECH )</span><br>
-            Duration: 4 years<br>
-            Qualifying Test : IIT-JEE<br>
-            Minor & Honours: Option to earn an Honours degree (in the same department) or a Minor degree (in another department.). This requires taking an additional five specially selected courses.
-            <br><br>
-            <span style="font-weight: 500;">Graduate(M.Tech)</span><br>
-            Duration: 2 years<br>
-            Thesis duration: 1 year<br>
-            Assistantship: Affiliated to course instructors or research projects.<br>
-            Qualifying Test : GATE(Graduate Aptitude Test in Engineering).
-            <br><br>
-            <span style="font-weight: 500;">Graduate(M.Sc.)</span><br>
-            Duration: 2 years<br>
-            M.Sc. project duration: 1 year.<br>
-            Qualifying Test : JAM(Joint Admission Test For MSc).
-            <br><br>
-            <span style="font-weight: 500;">Doctoral Programme</span><br>
-            The PhD programme gives an opportunity to enthusiastic researchers to take up open-ended research problems. Both computational as well as experimental works addressing engineering and scientific complexities and concepts are undertaken to meet the needs of the industry and academia alike.<br>
-            Selection : Students with good academic background are admitted into the programme through a rigorous interview. Assistantship for regular PhD students is provided by MHRD.<br><br>
+        
+        <div class="fluid-container mb-0 pb-5" style="background-color: #F5F6F9; padding-top: 150px;">
+            <div class="container content-process lead pb-5">
+                <span style="font-weight: 500;">Undergraduate( B.TECH )</span><br>
+                Duration: 4 years<br>
+                Qualifying Test : IIT-JEE<br>
+                Minor & Honours: Option to earn an Honours degree (in the same department) or a Minor degree (in another department.). This requires taking an additional five specially selected courses.
+                <br><br>
+                <span style="font-weight: 500;">Graduate(M.Tech)</span><br>
+                Duration: 2 years<br>
+                Thesis duration: 1 year<br>
+                Assistantship: Affiliated to course instructors or research projects.<br>
+                Qualifying Test : GATE(Graduate Aptitude Test in Engineering).
+                <br><br>
+                <span style="font-weight: 500;">Graduate(M.Sc.)</span><br>
+                Duration: 2 years<br>
+                M.Sc. project duration: 1 year.<br>
+                Qualifying Test : JAM(Joint Admission Test For MSc).
+                <br><br>
+                <span style="font-weight: 500;">Doctoral Programme</span><br>
+                The PhD programme gives an opportunity to enthusiastic researchers to take up open-ended research problems. Both computational as well as experimental works addressing engineering and scientific complexities and concepts are undertaken to meet the needs of the industry and academia alike.<br>
+                Selection : Students with good academic background are admitted into the programme through a rigorous interview. Assistantship for regular PhD students is provided by MHRD.<br><br>
+            </div>
         </div>
         
         <div class="footer">

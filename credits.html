@@ -16,15 +16,39 @@
         <link rel="stylesheet" type="text/css" href="ionicons-2.0.1/css/ionicons.css">
         <link rel="icon" href="iithLogoNoText.png" sizes="192x192" />
         
+        <link href="carousel.css" rel="stylesheet">
+        
         <style type="text/css">
             
             body {
-                background-color: #F5F6F9;
+                margin: 0;
+                padding: 0;
             }
             
             a, a:active, a:visited {
                 text-decoration: none !important;
             } 
+            
+            .bg {
+                background: url('credits.jpg') no-repeat center center;
+                position: fixed;
+                width: 100%;
+                height: 680px; /*same height as jumbotron */
+                top: 0;
+                left: 0;
+                z-index: -1;
+                -webkit-filter: blur(3px);
+                -moz-filter: blur(3px);
+                -o-filter: blur(3px);
+                -ms-filter: blur(3px);
+                filter: blur(3px);
+            }
+            
+            .jumbotron {
+                width: 100%;
+                height: 680px;
+                background-color: transparent;
+            }
             
             #logoImg {
                 width: 140px;
@@ -42,14 +66,14 @@
                 font-family: 'Raleway', sans-serif;
                 line-height: 55px;
                 letter-spacing: 4px;
-                color: #262626;
+                color: #fff;
                 font-weight: 200;
                 font-size: 40px;
             }
 
             #txtHeading {
                 font-size: 15px;
-                color: #262626;
+                color: #fff;
             }
             
             .menu {
@@ -65,7 +89,7 @@
             .line {
                 width: 30px;
                 height: 2px;
-                background-color: #262626;
+                background-color: #fff;
             }
             
             .list-items {
@@ -120,14 +144,9 @@
                     font-family: 'Raleway', sans-serif;
                     line-height: 75px;
                     letter-spacing: 4px;
-                    color: #262626;
                     font-weight: 200;
                     font-size: 60px;
-                }
-
-                #txtHeading {
-                    color: #262626;
-                }                
+                }             
             }
         
         </style>
@@ -213,17 +232,24 @@
             <div class="line"></div>
         </div>
         
-        <div class="container text-center" id="contentHeading">
-            <img class="mt-0 mb-4" src="iithLogoDark.png" id="logoImg">
-            <h1 class="mt-2 mb-2" id="mainHeading">WEBSITE CREDITS</h1>
-            <p class="mb-4 lead" id="txtHeading">Indian Institute Of Technology, Hyderabad</p>
+        <div class="bg"></div>
+        <div class="jumbotron jumbotron-fluid p-0 mb-0">
+            <div class="container-fluid text-center m-0 p-5" style='padding-top: 100px !important; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: #fff;'>
+                <div class="container text-center" id="contentHeading">
+                    <img class="mt-0 mb-4" src="iithLogo.png" id="logoImg">
+                    <h1 class="mt-2 mb-2" id="mainHeading">WEBSITE CREDITS</h1>
+                    <p class="mb-4 lead" id="txtHeading">Indian Institute Of Technology, Hyderabad</p>
+                </div>
+            </div>
         </div>
-            
-        <div class="container content-process lead mb-5 pb-5">
-            <div class="row">
-                <div class="col-12 col-md-6 mb-5"><span style="font-weight: 500;">SAKSHAM MITTAL</span><br>Computer Science and Engineering<br>B.Tech<br>Email: <a href="mailto:cs16btech11032@iith.ac.in">cs16btech11032@iith.ac.in</a></div>
-                <div class="col-12 col-md-6 mb-5"><span style="font-weight: 500;">HARSHIT PATEL</span><br>Computer Science and Engineering<br>B.Tech<br>Email: <a href="mailto:cs16btech11017@iith.ac.in">cs16btech11017@iith.ac.in</a></div>
-                <div class="col-12 col-md-6 mb-5"><span style="font-weight: 500;">OM SITAPARA</span><br>Computer Science and Engineering<br>B.Tech<br>Email: <a href="mailto:cs16btech11038@iith.ac.in">cs16btech11038@iith.ac.in</a></div>
+        
+        <div class="fluid-container mb-0 pb-5" style="background-color: #F5F6F9; padding-top: 150px;">
+            <div class="container content-process lead mb-5 pb-5">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-5"><span style="font-weight: 500;">SAKSHAM MITTAL</span><br>Computer Science and Engineering<br>B.Tech<br>Email: <a href="mailto:cs16btech11032@iith.ac.in">cs16btech11032@iith.ac.in</a></div>
+                    <div class="col-12 col-md-6 mb-5"><span style="font-weight: 500;">HARSHIT PATEL</span><br>Computer Science and Engineering<br>B.Tech<br>Email: <a href="mailto:cs16btech11017@iith.ac.in">cs16btech11017@iith.ac.in</a></div>
+                    <div class="col-12 col-md-6 mb-5"><span style="font-weight: 500;">OM SITAPARA</span><br>Computer Science and Engineering<br>B.Tech<br>Email: <a href="mailto:cs16btech11038@iith.ac.in">cs16btech11038@iith.ac.in</a></div>
+                </div>
             </div>
         </div>
         

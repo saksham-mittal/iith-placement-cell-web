@@ -19,13 +19,33 @@
         <style type="text/css">
             
             body {
-                background-color: #F5F6F9;
                 font-smoothing: antialiased;
+                margin: 0;
+                padding: 0;
             }
-            
+            .bg {
+                background: url(companies.png) no-repeat center center;
+                position: fixed;
+                width: 100%;
+                height: 680px; /*same height as jumbotron */
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transform: scale(1.3, 1.3);
+                -webkit-filter: blur(3px);
+                -moz-filter: blur(3px);
+                -o-filter: blur(3px);
+                -ms-filter: blur(3px);
+                filter: blur(3px);
+            }
             a, a:active, a:visited {
                 text-decoration: none !important;
-            } 
+            }
+            
+            .jumbotron {
+                width: 100%;
+                background-color: transparent;
+            }
             
             #logoImg {
                 width: 140px;
@@ -43,14 +63,14 @@
                 font-family: 'Raleway', sans-serif;
                 line-height: 55px;
                 letter-spacing: 4px;
-                color: #262626;
+                color: #fff;
                 font-weight: 200;
                 font-size: 40px;
             }
 
             #txtHeading {
                 font-size: 15px;
-                color: #262626;
+                color: #fff;
             }
             
             .menu {
@@ -66,7 +86,7 @@
             .line {
                 width: 30px;
                 height: 2px;
-                background-color: #262626;
+                background-color: #fff;
             }
             
             .list-items {
@@ -118,14 +138,9 @@
                     font-family: 'Raleway', sans-serif;
                     line-height: 75px;
                     letter-spacing: 4px;
-                    color: #262626;
                     font-weight: 200;
                     font-size: 60px;
-                }
-
-                #txtHeading {
-                    color: #262626;
-                }                
+                }             
             }
         
         </style>
@@ -211,126 +226,134 @@
             <div class="line"></div>
         </div>
         
-        <div class="container text-center" id="contentHeading">
-            <img class="mt-0 mb-4" src="iithLogoDark.png" id="logoImg">
-            <h1 class="mt-2 mb-2" id="mainHeading">OUR MAJOR RECRUITERS</h1>
-            <p class="mb-4 lead" id="txtHeading">Indian Institute Of Technology, Hyderabad</p>
-        </div>
-            
-        <div class="container content-process lead mb-5 pb-5">
-            The placements at Indian Institute of Technology Hyderabad for the academic year 2016–2017 have yielded 264 offers. There were 385 students registered for placements last year. A total of 210+ companies have registered for the placement process. out of them, 117+ have made it to the campus and interacted with the students of B.Tech., M.Tech., M.Des., M.Sc. and Ph.D across 14 departments.
-            <br><br>
-            During this year some new companies have made their entry to IITH. The top paying companies were Rakuten, Yahoo Japan and SMS Data tech. The highest salary offered for this year is Rs.38 LPA and the average salary is Rs.11.44 LPA. There were seventeen international offers.A good number of students from UG, PG and M.Sc. have opted for higher education in India and abroad.<br><br>
-            <center><h1 class="mt-4 mb-5 pb-3 heading-recruitment">COMPANIES</h1></center>
-            <div class="row">
-                <div class="col-4">
-                    Aarvee Associates<br><br>
-                    Accenture<br><br>
-                    Accolite<br><br>
-                    Adobe Systems<br><br>
-                    Altair<br><br>
-                    Amazon<br><br>
-                    AMD Bangalore<br><br>
-                    Amrita University<br><br>
-                    Analog Devices<br><br>
-                    Bank of America<br><br>
-                    BDL<br><br>
-                    Belcan<br><br>
-                    Benz<br><br>
-                    Bombardier<br><br>
-                    Boston Scientific<br><br>
-                    BPCL<br><br>
-                    Cap Gemini<br><br>
-                    Capital Dynamics<br><br>
-                    CEWIT<br><br>
-                    Code Nation<br><br>
-                    Cookpad<br><br>
-                    CTS<br><br>
-                    Cyient<br><br>
-                    Dell<br><br>
-                    Deloitte<br><br>
-                    Deshaw<br><br>
-                    Direct i<br><br>
-                    Eaton<br><br>
-                    EFI Bangalore<br><br>
-                    Evalueserve<br><br> 
-                    FIITJEE<br><br>
-                    Finiser<br><br>
-                    Futures First<br><br>
-                    GAP INC<br><br>
-                </div>
-                <div class="col-4">
-                    Geny Medium<br><br>
-                    Headout<br><br>
-                    Hexagon<br><br>
-                    Honeywell<br><br>
-                    HPCL<br><br>
-                    I Concept<br><br>
-                    Infosys<br><br>
-                    ISRO<br><br>
-                    L&T Constructions<br><br>
-                    Leoforce<br><br>
-                    Mahindra & Mahindra<br><br>
-                    MAQ software<br><br>
-                    Marvell Semi- Conductortor<br><br>
-                    Mathwork<br><br>
-                    Maxim Integrated<br><br>
-                    Mediatek<br><br>
-                    Meeami Technologies<br><br>
-                    Microsoft<br><br>
-                    Microsoft IDC<br><br>
-                    Mobile Iron<br><br>
-                    MPR Refractors<br><br>
-                    MRF<br><br>
-                    Murata Electronics Singapore<br><br>
-                    NFTDC<br><br>
-                    NLCC<br><br>
-                    Oracle<br><br>
-                    Orbees<br><br>
-                    PayPal<br><br>
-                    Periyar Maniammai University<br><br>
-                    Progress Software<br><br>
-                    PTC Software<br><br>
-                    Qolsys<br><br>
-                    Qualcomm<br><br>
-                    Rakuten<br><br>
-                </div>
-                <div class="col-4">
-                    Red Pine<br><br>
-                    Sahajanand<br><br>
-                    Sales Force<br><br>
-                    Samsung Bangalore<br><br>
-                    Samsung Delhi<br><br>
-                    Scrum Do<br><br>
-                    Service Now<br><br>
-                    sigmoid Analytics<br><br>
-                    Smart prix<br><br>
-                    Smartron<br><br>
-                    Sms Data Tech<br><br>
-                    Strata Geo systems<br><br>
-                    Stryker<br><br>
-                    Tata Motors<br><br>
-                    Tata Steel<br><br>
-                    TCS<br><br>
-                    Teach For India<br><br>
-                    Tesco<br><br>
-                    Think I<br><br>
-                    UHG<br><br>
-                    United Health Group<br><br>
-                    Uurmi<br><br>
-                    Vedanta<br><br>
-                    Virtusa<br><br>
-                    Walmart<br><br>
-                    Wells Fargo<br><br>
-                    Works Application<br><br>
-                    Yahoo Japan<br><br>
-                    Zuti Engg<br><br>
+        <div class="bg"></div>
+        <div class="jumbotron jumbotron-fluid p-0 mb-0">
+            <div class="container-fluid text-center m-0 p-5" style='padding-top: 100px !important; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: #fff;'>
+                <div class="container text-center" id="contentHeading">
+                    <img class="mt-0 mb-4" src="iithLogo.png" id="logoImg">
+                    <h1 class="mt-2 mb-2" id="mainHeading">OUR MAJOR RECRUITERS</h1>
+                    <p class="mb-4 lead" id="txtHeading">Indian Institute Of Technology, Hyderabad</p>
                 </div>
             </div>
+        </div>
             
+        <div class="fluid-container pb-5" style="background-color: #F5F6F9; padding-top: 100px;">
+            <div class="container content-process lead pb-5">
+                The placements at Indian Institute of Technology Hyderabad for the academic year 2016–2017 have yielded 264 offers. There were 385 students registered for placements last year. A total of 210+ companies have registered for the placement process. out of them, 117+ have made it to the campus and interacted with the students of B.Tech., M.Tech., M.Des., M.Sc. and Ph.D across 14 departments.
+                <br><br>
+                During this year some new companies have made their entry to IITH. The top paying companies were Rakuten, Yahoo Japan and SMS Data tech. The highest salary offered for this year is Rs.38 LPA and the average salary is Rs.11.44 LPA. There were seventeen international offers.A good number of students from UG, PG and M.Sc. have opted for higher education in India and abroad.<br><br>
+                <center><h1 class="mt-4 mb-5 pb-3 heading-recruitment">COMPANIES</h1></center>
+                <div class="row">
+                    <div class="col-4">
+                        Aarvee Associates<br><br>
+                        Accenture<br><br>
+                        Accolite<br><br>
+                        Adobe Systems<br><br>
+                        Altair<br><br>
+                        Amazon<br><br>
+                        AMD Bangalore<br><br>
+                        Amrita University<br><br>
+                        Analog Devices<br><br>
+                        Bank of America<br><br>
+                        BDL<br><br>
+                        Belcan<br><br>
+                        Benz<br><br>
+                        Bombardier<br><br>
+                        Boston Scientific<br><br>
+                        BPCL<br><br>
+                        Cap Gemini<br><br>
+                        Capital Dynamics<br><br>
+                        CEWIT<br><br>
+                        Code Nation<br><br>
+                        Cookpad<br><br>
+                        CTS<br><br>
+                        Cyient<br><br>
+                        Dell<br><br>
+                        Deloitte<br><br>
+                        Deshaw<br><br>
+                        Direct i<br><br>
+                        Eaton<br><br>
+                        EFI Bangalore<br><br>
+                        Evalueserve<br><br> 
+                        FIITJEE<br><br>
+                        Finiser<br><br>
+                        Futures First<br><br>
+                        GAP INC<br><br>
+                    </div>
+                    <div class="col-4">
+                        Geny Medium<br><br>
+                        Headout<br><br>
+                        Hexagon<br><br>
+                        Honeywell<br><br>
+                        HPCL<br><br>
+                        I Concept<br><br>
+                        Infosys<br><br>
+                        ISRO<br><br>
+                        L&T Constructions<br><br>
+                        Leoforce<br><br>
+                        Mahindra & Mahindra<br><br>
+                        MAQ software<br><br>
+                        Marvell Semi- Conductortor<br><br>
+                        Mathwork<br><br>
+                        Maxim Integrated<br><br>
+                        Mediatek<br><br>
+                        Meeami Technologies<br><br>
+                        Microsoft<br><br>
+                        Microsoft IDC<br><br>
+                        Mobile Iron<br><br>
+                        MPR Refractors<br><br>
+                        MRF<br><br>
+                        Murata Electronics Singapore<br><br>
+                        NFTDC<br><br>
+                        NLCC<br><br>
+                        Oracle<br><br>
+                        Orbees<br><br>
+                        PayPal<br><br>
+                        Periyar Maniammai University<br><br>
+                        Progress Software<br><br>
+                        PTC Software<br><br>
+                        Qolsys<br><br>
+                        Qualcomm<br><br>
+                        Rakuten<br><br>
+                    </div>
+                    <div class="col-4">
+                        Red Pine<br><br>
+                        Sahajanand<br><br>
+                        Sales Force<br><br>
+                        Samsung Bangalore<br><br>
+                        Samsung Delhi<br><br>
+                        Scrum Do<br><br>
+                        Service Now<br><br>
+                        sigmoid Analytics<br><br>
+                        Smart prix<br><br>
+                        Smartron<br><br>
+                        Sms Data Tech<br><br>
+                        Strata Geo systems<br><br>
+                        Stryker<br><br>
+                        Tata Motors<br><br>
+                        Tata Steel<br><br>
+                        TCS<br><br>
+                        Teach For India<br><br>
+                        Tesco<br><br>
+                        Think I<br><br>
+                        UHG<br><br>
+                        United Health Group<br><br>
+                        Uurmi<br><br>
+                        Vedanta<br><br>
+                        Virtusa<br><br>
+                        Walmart<br><br>
+                        Wells Fargo<br><br>
+                        Works Application<br><br>
+                        Yahoo Japan<br><br>
+                        Zuti Engg<br><br>
+                    </div>
+                </div>
+
+            </div>
+    
         </div>
         
-        <div class="footer">
+        <div class="footer mt-0">
              <div class="fluid-container text-center" style="background-color: rgba(0, 0, 0, 0.9);">
                 COPYRIGHT <strong>&copy; <a href="http://www.iith.ac.in/" style='color: #47c9e5;'>Indian Institute Of Technology, Hyderabad</a></strong> - 2017
             </div>

@@ -338,13 +338,14 @@ a:hover {
 
 .btn1 {
     position: relative;
+    width: 100%;
     margin: 0 auto;
     letter-spacing: 3px;
     cursor: pointer;
     background-color: transparent;
     color: #fff;
     border: 3px solid #fff;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
     text-align: center;
     overflow: hidden;
@@ -357,7 +358,7 @@ a:hover {
     color: #000;
     font-family: 'Ionicons';
     font-size: 21px;
-    left: 60px;
+    left: 160px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
@@ -369,7 +370,7 @@ a:hover {
 }
 
 .btn1:hover:after {
-    left: 20px;
+    left: 12px;
 }
 
 #modal1 {
@@ -404,7 +405,7 @@ a:hover {
         position: relative;
         max-width: 60%;
         margin: 0 auto;
-        margin-top: 500px !important;
+        margin-top: 400px !important;
         background-color: rgba(0, 0, 0, 0.6);
         border-radius: 7px;
     }

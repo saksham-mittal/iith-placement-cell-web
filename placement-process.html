@@ -20,12 +20,33 @@
         <style type="text/css">
             
             body {
-                background-color: #F5F6F9;
+                margin: 0;
+                padding: 0;
             }
             
+            .bg {
+                background: url('placement-process.png') no-repeat center center;
+                position: fixed;
+                width: 100%;
+                height: 680px; /*same height as jumbotron */
+                top: 0;
+                left: 0;
+                z-index: -1;
+                -webkit-filter: blur(3px);
+                -moz-filter: blur(3px);
+                -o-filter: blur(3px);
+                -ms-filter: blur(3px);
+                filter: blur(3px);
+            }
             a, a:active, a:visited {
                 text-decoration: none !important;
             } 
+            
+            .jumbotron {
+                width: 100%;
+                height: 680px;
+                background-color: transparent;
+            }
             
             #logoImg {
                 width: 140px;
@@ -43,14 +64,14 @@
                 font-family: 'Raleway', sans-serif;
                 line-height: 55px;
                 letter-spacing: 4px;
-                color: #262626;
+                color: #fff;
                 font-weight: 200;
                 font-size: 40px;
             }
 
             #txtHeading {
                 font-size: 15px;
-                color: #262626;
+                color: #fff;
             }
             
             .menu {
@@ -66,7 +87,7 @@
             .line {
                 width: 30px;
                 height: 2px;
-                background-color: #262626;
+                background-color: #fff;
             }
             
             .list-items {
@@ -118,14 +139,9 @@
                     font-family: 'Raleway', sans-serif;
                     line-height: 75px;
                     letter-spacing: 4px;
-                    color: #262626;
                     font-weight: 200;
                     font-size: 60px;
-                }
-
-                #txtHeading {
-                    color: #262626;
-                }                
+                }               
             }
         
         </style>
@@ -211,96 +227,103 @@
             <div class="line"></div>
         </div>
         
-        <div class="container text-center" id="contentHeading">
-            <img class="mt-0 mb-4" src="iithLogoDark.png" id="logoImg">
-            <h1 class="mt-2 mb-2" id="mainHeading">PLACEMENT PROCESS</h1>
-            <p class="mb-4 lead" id="txtHeading">Indian Institute Of Technology, Hyderabad</p>
-        </div>
-            
-        <div class="container content-process lead mb-5 pb-5">
-            The Placement process at IIT Hyderabad usually starts in the month of JULY by sending out a formal E-mail inviation to the company/organization with relevant information and time schedules. Interested companies will fill the online Employer's Registration Form( ERF) by creating their account. Old users may use their Login Credentials to create a new ERF. We have a technical team to help you in ERF filling if needed. The Job deatils are shown to the students once placement office accepts the ERF & interested students can start registering for the company. In practice we usually give a week's time to register after the ERF is opened to the students.
-            <br><br>
-            Companies may invite CVs of interested students and shortlist students on the basis of their profiles ten days prior to their campus visit. The companies are required to shortlist candidates from the pool of applicants and send the same to the Placement Office at the earliest (at least three days in advance of the visit to the campus). The company can request a visit to the campus for a Pre-Placement Talk (PPT) before the Campus Placements or can combine it with the final recruitment. Pre interview screening can be done from October soon after the midsemester exams. A mutually convenient date** and time for Pre-Placement Talk (PPT) & selection process is fixed.
-            <br><br>
-            Recruiters conduct interviews for shortlisted students on campus on specified dates & slots and make offers. They may also conduct off campus interviews with students in special cases. The company is required to present the final list of offers on the same day. The Placement Office would handover the company Offer Letters to the students and the student offer acceptances would be forwarded to the company.
-            <br><br>
-            *The ERF includes the required contact details, profile of potential recruits, compensation package, date of visit, selection procedure, etc.
-            <br><br>
-            1. Job profile and Career growth prospects.
-            <br><br>
-            2. Compensation package.
-            <br><br>
-            3. Likely number of offers this year.
-        </div>
+        <div class="bg"></div>
+        <div class="jumbotron jumbotron-fluid p-0 mb-0">
+            <div class="container-fluid text-center m-0 p-5" style='padding-top: 100px !important; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: #fff;'>
+                <div class="container text-center" id="contentHeading">
+                    <img class="mt-0 mb-4" src="iithLogo.png" id="logoImg">
+                    <h1 class="mt-2 mb-2" id="mainHeading">PLACEMENT PROCESS</h1>
+                    <p class="mb-4 lead" id="txtHeading">Indian Institute Of Technology, Hyderabad</p>
+                </div>
+            </div>
+        </div>  
         
-        <div class="container mb-5 pb-5">
-            <center><h1 class="mt-4 mb-5 pb-5" id="mainHeading">CAMPUS RECRUITMENT PROCESS</h1></center>
-            <div class="row pb-5">
-                <p class="heading-recruitment col-12">Contacting Companies</p>
-                <div class="col-7 offset-3">
-                    <img src="iithLogoDark.png" class="img-recruit">&nbsp;&nbsp;
-                    <i class="icon ion-arrow-right-a" style="font-size: 50px; color: #262626;"></i>
-                    &nbsp;&nbsp;<img src="contact-3.png" class="img-recruit">
+        <div class="fluid-container pb-5" style="background-color: #F5F6F9; padding-top: 100px;">
+            <div class="container content-process lead mb-5 pb-5">
+                The Placement process at IIT Hyderabad usually starts in the month of JULY by sending out a formal E-mail inviation to the company/organization with relevant information and time schedules. Interested companies will fill the online Employer's Registration Form( ERF) by creating their account. Old users may use their Login Credentials to create a new ERF. We have a technical team to help you in ERF filling if needed. The Job deatils are shown to the students once placement office accepts the ERF & interested students can start registering for the company. In practice we usually give a week's time to register after the ERF is opened to the students.
+                <br><br>
+                Companies may invite CVs of interested students and shortlist students on the basis of their profiles ten days prior to their campus visit. The companies are required to shortlist candidates from the pool of applicants and send the same to the Placement Office at the earliest (at least three days in advance of the visit to the campus). The company can request a visit to the campus for a Pre-Placement Talk (PPT) before the Campus Placements or can combine it with the final recruitment. Pre interview screening can be done from October soon after the midsemester exams. A mutually convenient date** and time for Pre-Placement Talk (PPT) & selection process is fixed.
+                <br><br>
+                Recruiters conduct interviews for shortlisted students on campus on specified dates & slots and make offers. They may also conduct off campus interviews with students in special cases. The company is required to present the final list of offers on the same day. The Placement Office would handover the company Offer Letters to the students and the student offer acceptances would be forwarded to the company.
+                <br><br>
+                *The ERF includes the required contact details, profile of potential recruits, compensation package, date of visit, selection procedure, etc.
+                <br><br>
+                1. Job profile and Career growth prospects.
+                <br><br>
+                2. Compensation package.
+                <br><br>
+                3. Likely number of offers this year.
+            </div>
+
+            <div class="container mb-5 pb-5">
+                <center><h1 class="mt-4 mb-5 pb-5" id="mainHeading" style="color: #262626;">CAMPUS RECRUITMENT PROCESS</h1></center>
+                <div class="row pb-5">
+                    <p class="heading-recruitment col-12">Contacting Companies</p>
+                    <div class="col-7 offset-3">
+                        <img src="iithLogoDark.png" class="img-recruit">&nbsp;&nbsp;
+                        <i class="icon ion-arrow-right-a" style="font-size: 50px; color: #262626;"></i>
+                        &nbsp;&nbsp;<img src="contact-3.png" class="img-recruit">
+                    </div>
+                </div>
+                <div class="row pb-5">
+                    <p class="heading-recruitment col-12">Company Confirmations via ERF</p>
+                    <div class="col-7 offset-3">
+                        <img src="contact-2.png" class="img-recruit">&nbsp;&nbsp;
+                        <i class="icon ion-arrow-right-a" style="font-size: 50px; color: #262626;"></i>
+                        &nbsp;&nbsp;<img src="iithLogoDark.png" class="img-recruit">
+                    </div>
+                </div>
+                <div class="row pb-5">
+                    <p class="heading-recruitment col-12">Dates Confirmation for Final Hiring</p>
+                    <div class="col-4 offset-4">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="dataConfirming.png" class="img-recruit">
+                    </div>
+                </div>
+                <div class="row pb-5">
+                    <p class="heading-recruitment col-12">Pre placement talks</p>
+                    <div class="col-4 offset-4">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="prePlacementTalk-2.png" class="img-recruit">
+                    </div>
+                </div>
+                <div class="row pb-5">
+                    <p class="heading-recruitment col-12">Campus Interviews</p>
+                    <div class="col-4 offset-4">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="campusInterview-2.png" class="img-recruit">
+                    </div>
+                </div>
+                <div class="row pb-5">
+                    <p class="heading-recruitment col-12">Job Offer</p>
+                    <div class="col-4 offset-4">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="job-2.png" class="img-recruit">
+                    </div>
                 </div>
             </div>
-            <div class="row pb-5">
-                <p class="heading-recruitment col-12">Company Confirmations via ERF</p>
-                <div class="col-7 offset-3">
-                    <img src="contact-2.png" class="img-recruit">&nbsp;&nbsp;
-                    <i class="icon ion-arrow-right-a" style="font-size: 50px; color: #262626;"></i>
-                    &nbsp;&nbsp;<img src="iithLogoDark.png" class="img-recruit">
+
+            <div class="container mb-5 pb-5">
+                <center><h1 class="mt-4 mb-5 pb-5" id="mainHeading" style="color: #262626;">RULES AND REGULATIONS</h1></center>
+                <div class="container-fluid content-process lead mb-5 pb-5">
+                    1. IIT Hyderabad will start the campus placements from the 1st week of December. The placement calendar will be finalized by the student body, based on the ERF submitted by all the companies, and a formula parameterized on various factors such as<br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;1. Job profile and Career growth prospects.<br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;2. Compensation package.<br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;3.Branch specification given by the company<br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;4. Likely number of offers this year.<br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;5. Student Ratings<br><br>
+                    2. Placement process shall be completed on a slot basis. Each company that has registered with us has been allotted one of the three slots in a day. The slot timings are as follows:<br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;1. 7:00 am to 12:00 pm<br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;2. 1:00 pm to 6:00 pm<br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;3. 7:00 pm to 12:00 am<br><br>
+                    3. Saturdays and Sundays are reserved for conducting test only. The company may complete their pre-interview tests on a Saturday / Sunday preceding the week in which the hiring happens.<br><br>
+                    4. Each company has been allotted a distinct slot based on the above mentioned criteria. The company is supposed to complete their recruitment process within allotted time (+1 hour of additional time in special cases). Each company must declare final results within 2 hours after completion of their allotted slot time. Failing to do so, company may lose the students whom it has selected for final hiring process!<br><br>
+                    5. IIT Hyderabad will make best effort to ensure that all the placement process requirements such as rooms, test material, stationery etc. are met with.<br><br>
+                    6. IIT Hyderabad strictly enforces the one-student, one-job policy, with the exception of a single dream-job option. The slot structure, and strict timings for declaring the results is necessary to ensure this. Please note that a student is out of placement process once he/she has an offer in hand.<br><br>
+                    7. Database of the eligible students will be sent one week before the allotted date.<br><br>
+                    8. Companies should send in their requirements (such as number of rooms required) one week in advance so that the requirements can be met.<br><br>
+                    9. A copy of the offer letters must be mailed to the placement office after the results are finalized.<br><br>
                 </div>
-            </div>
-            <div class="row pb-5">
-                <p class="heading-recruitment col-12">Dates Confirmation for Final Hiring</p>
-                <div class="col-4 offset-4">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <img src="dataConfirming.png" class="img-recruit">
-                </div>
-            </div>
-            <div class="row pb-5">
-                <p class="heading-recruitment col-12">Pre placement talks</p>
-                <div class="col-4 offset-4">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <img src="prePlacementTalk-2.png" class="img-recruit">
-                </div>
-            </div>
-            <div class="row pb-5">
-                <p class="heading-recruitment col-12">Campus Interviews</p>
-                <div class="col-4 offset-4">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <img src="campusInterview-2.png" class="img-recruit">
-                </div>
-            </div>
-            <div class="row pb-5">
-                <p class="heading-recruitment col-12">Job Offer</p>
-                <div class="col-4 offset-4">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <img src="job-2.png" class="img-recruit">
-                </div>
-            </div>
-        </div>
-        
-        <div class="container mb-5 pb-5">
-            <center><h1 class="mt-4 mb-5 pb-5" id="mainHeading">RULES AND REGULATIONS</h1></center>
-            <div class="container-fluid content-process lead mb-5 pb-5">
-                1. IIT Hyderabad will start the campus placements from the 1st week of December. The placement calendar will be finalized by the student body, based on the ERF submitted by all the companies, and a formula parameterized on various factors such as<br><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;1. Job profile and Career growth prospects.<br><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;2. Compensation package.<br><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;3.Branch specification given by the company<br><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;4. Likely number of offers this year.<br><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;5. Student Ratings<br><br>
-                2. Placement process shall be completed on a slot basis. Each company that has registered with us has been allotted one of the three slots in a day. The slot timings are as follows:<br><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;1. 7:00 am to 12:00 pm<br><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;2. 1:00 pm to 6:00 pm<br><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;3. 7:00 pm to 12:00 am<br><br>
-                3. Saturdays and Sundays are reserved for conducting test only. The company may complete their pre-interview tests on a Saturday / Sunday preceding the week in which the hiring happens.<br><br>
-                4. Each company has been allotted a distinct slot based on the above mentioned criteria. The company is supposed to complete their recruitment process within allotted time (+1 hour of additional time in special cases). Each company must declare final results within 2 hours after completion of their allotted slot time. Failing to do so, company may lose the students whom it has selected for final hiring process!<br><br>
-                5. IIT Hyderabad will make best effort to ensure that all the placement process requirements such as rooms, test material, stationery etc. are met with.<br><br>
-                6. IIT Hyderabad strictly enforces the one-student, one-job policy, with the exception of a single dream-job option. The slot structure, and strict timings for declaring the results is necessary to ensure this. Please note that a student is out of placement process once he/she has an offer in hand.<br><br>
-                7. Database of the eligible students will be sent one week before the allotted date.<br><br>
-                8. Companies should send in their requirements (such as number of rooms required) one week in advance so that the requirements can be met.<br><br>
-                9. A copy of the offer letters must be mailed to the placement office after the results are finalized.<br><br>
             </div>
         </div>
         
