@@ -23,6 +23,7 @@
                 margin: 0;
                 padding: 0;
                 background-color: #FFCFAF;
+                overflow-x: hidden;
             }
             
              #mainHeading {
@@ -31,7 +32,7 @@
                 letter-spacing: 4px;
                 color: #FF934B;
                 font-weight: 200;
-                font-size: 40px;
+                font-size: 36px;
             }
             
             .bg-image-under-construction {
@@ -107,6 +108,10 @@
         
         <script type="application/javascript">
             $('#pageHeading').css('padding-top', $(window).height()/2 - 260 + 'px');
+            if($('.bg-image-under-construction').width() > $(window).width()) {
+                $('.bg-image-under-construction').width($(window).width());
+                $('.bg-image-under-construction').height(1196/1455 * $('.bg-image-under-construction').width());
+            }
         </script>
         
     </body>
