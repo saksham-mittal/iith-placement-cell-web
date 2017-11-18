@@ -344,21 +344,22 @@ a:hover {
     cursor: pointer;
     background-color: transparent;
     color: #fff;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     overflow: hidden;
     transition: all .3s ease;
+    border-radius: 28px;
 }
 
-.btn1:after {
+.btn1:before {
     position: relative;
     content: '\f125';
     color: #000;
     font-family: 'Ionicons';
     font-size: 21px;
-    left: 160px;
+    left: -160px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
@@ -366,14 +367,26 @@ a:hover {
 .btn1:hover {
     color: #000;
     background-color: #fff;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
 }
 
-.btn1:hover:after {
-    left: 12px;
+.btn1:hover:before {
+    left: -8px;
 }
 
-#modal1 {
+.btn1_2:before {
+    position: relative;
+    content: '\f125';
+    color: #000;
+    font-family: 'Ionicons';
+    font-size: 21px;
+    left: -160px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.btn1_2:hover:before {
+    left: -6px;
 }
 
 @media (min-width: 768px) { 
@@ -548,4 +561,29 @@ a:hover {
         height: 418px !important;
         border-radius: 4px;
     }
+}
+
+
+@media (min-width: 576px) { 
+
+    .btn1 {
+        font-size: 14px;
+    }
+    
+}
+
+@media (min-width: 768px) { 
+
+    #contentHeading {
+        max-width: 98%;
+    }
+    
+}
+
+@media (min-width: 1024px) { 
+
+    #contentHeading {
+        max-width: 60%;
+    }
+    
 }
