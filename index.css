@@ -582,6 +582,10 @@ a:hover {
 
 @media (min-width: 1024px) { 
 
+    .btn1 {
+        font-size: 16px;
+    }
+    
     #contentHeading {
         max-width: 60%;
     }
