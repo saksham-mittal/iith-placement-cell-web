@@ -22,7 +22,7 @@
             body {
                 margin: 0;
                 padding: 0;
-                background-color: #FFCFAF;
+                background-color: #FFC299;
                 overflow-x: hidden;
             }
             
@@ -30,26 +30,25 @@
                 font-family: 'Raleway', sans-serif;
                 line-height: 55px;
                 letter-spacing: 4px;
-                color: #FF934B;
+                color: #FF822B;
                 font-weight: 200;
                 font-size: 36px;
             }
             
-            .bg-image-under-construction {
-                height: 400px;
-            }
-            
-            
             .footer {
                 position: relative;
-                bottom: -90px !important;
+                bottom: 0px !important;
                 width: 100%;
                 line-height: 60px;
                 color: #fff;
                 font-size: 10px;
             }
-
-
+            
+            .u-const {
+                margin-top: 70px;
+                margin-bottom: 100px
+            }
+            
             @media (min-width: 768px) {
         
                 #mainHeading {
@@ -59,7 +58,10 @@
                     font-weight: 200;
                     font-size: 60px;
                 }
-                
+                .u-const {
+                    margin-top: 200px;
+                    margin-bottom: 200px
+                }
             }
         
         </style>
@@ -67,23 +69,27 @@
     </head>
     <body>
         
-        <div class="container text-center" id="pageHeading">
-            <h1 class="mt-2 mb-2" id="mainHeading">PAGE UNDER CONSTRUCTION</h1>
+        <div class="container u-const">
+            <div class="row pt-5">
+                <div class="col-md-12 container text-center" id="pageHeading">
+                    <h1 class="mt-2 mb-2" id="mainHeading">PAGE UNDER CONSTRUCTION</h1>
+                </div>
+                <div class="col-sm-10 offset-sm-1 col-md-4 offset-md-4">
+                    <img src="wrench.png" style="width: 100%;">
+                </div>
+            </div>
         </div>
-        <center>
-            <img src="under-construction.png" class="bg-image-under-construction">
-        </center>
         
         <div class="footer">
                 <center>
                 <div class="footer-content pt-3" style="position: relative; background-color: rgba(0, 0, 0, 0.6); overflow: hidden;">
                     <div class="container">
                         <div class="row pt-3">
-                            <div class="col-10 col-md-2 offset-md-1" style="border-right: 1px solid #FF934B; height: 25px; line-height: 25px;"><a href="index.html" style="color: #FF934B;">Home</a></div>
-                            <div class="col-10 offset-xs-2 col-md-2" style="border-right: 1px solid #FF934B; height: 25px; line-height: 25px;"><a href="https://www.iith.ac.in/" style="color: #FF934B;">IIT Hyderabad</a></div>
-                            <div class="col-10 offset-xs-2 col-md-2" style="border-right: 1px solid #FF934B; height: 25px; line-height: 25px;"><a href="ReachIITH.pdf" style="color: #FF934B;">Reaching IITH</a></div>
-                            <div class="col-10 offset-xs-2 col-md-2" style="border-right: 1px solid #FF934B; height: 25px; line-height: 25px;"><a href="credits.html" style="color: #FF934B;">Credits</a></div>
-                            <div class="col-10 offset-xs-2 col-md-2" style="height: 25px; line-height: 25px;"><a href="contactUs.html" style="color: #FF934B;">Contact Us</a></div>
+                            <div class="col-10 col-md-2 offset-md-1" style="border-right: 1px solid #FF822B; height: 25px; line-height: 25px;"><a href="index.html" style="color: #FF822B;">Home</a></div>
+                            <div class="col-10 offset-xs-2 col-md-2" style="border-right: 1px solid #FF822B; height: 25px; line-height: 25px;"><a href="https://www.iith.ac.in/" style="color: #FF822B;">IIT Hyderabad</a></div>
+                            <div class="col-10 offset-xs-2 col-md-2" style="border-right: 1px solid #FF822B; height: 25px; line-height: 25px;"><a href="ReachIITH.pdf" style="color: #FF822B;">Reaching IITH</a></div>
+                            <div class="col-10 offset-xs-2 col-md-2" style="border-right: 1px solid #FF822B; height: 25px; line-height: 25px;"><a href="credits.html" style="color: #FF822B;">Credits</a></div>
+                            <div class="col-10 offset-xs-2 col-md-2" style="height: 25px; line-height: 25px;"><a href="contactUs.html" style="color: #FF822B;">Contact Us</a></div>
                         </div>
                     </div>
                     <div class="container" style="width: 100%;">
@@ -105,14 +111,6 @@
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        
-        <script type="application/javascript">
-            $('#pageHeading').css('padding-top', $(window).height()/2 - 260 + 'px');
-            if($('.bg-image-under-construction').width() > $(window).width()) {
-                $('.bg-image-under-construction').width($(window).width());
-                $('.bg-image-under-construction').height(1196/1455 * $('.bg-image-under-construction').width());
-            }
-        </script>
         
     </body>
     
